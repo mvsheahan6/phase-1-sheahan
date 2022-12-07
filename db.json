@@ -1,0 +1,77 @@
+{
+
+    "NY Yankees Legends": [
+        {
+            "id": 1,
+            "name": "Derek Jeter",
+            "number": "2",
+            "career_average": ".310",
+            "career_RBI's": "1,311",
+            "career_homeruns": "260",
+            "image": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/3246.png"          
+        },
+        {
+            "id": 2,
+            "name": "Lou Gehrig",
+            "number": "4",
+            "career_average": ".340",
+            "career_RBI's": "1,995",
+            "career_homeruns": "493",
+            "image": "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1500w,f_auto,q_auto:best/MSNBC/Components/Photo/_new/100817-Lou-Gehrig-vmed-9a.jpg"          
+        },
+        {
+            "id": 3,
+            "name": "Mickey Mantel",
+            "number": "7",
+            "career_average": ".298",
+            "career_RBI's": "1,733",
+            "career_homeruns": "536",
+            "image": "https://static.wikia.nocookie.net/baseball/images/8/8d/New-york-yankees-1-1-.jpg/revision/latest?cb=20200926003253"         
+        },
+        {
+            "id": 4,
+            "name": "Joe Dimaggio",
+            "number": "5",
+            "career_average": ".325",
+            "career_RBI's": "1,537",
+            "career_homeruns": "361",
+            "image": "https://www.biography.com/.image/t_share/MTgwNDU3NzgzNDU4NTM5Mzcy/gettyimages-515585720.jpg"            
+        },
+        {
+            "id": 5,
+            "name": "Yogi Berra",
+            "number": "8",
+            "career_average": ".285",
+            "career_RBI's": "1,430",
+            "career_homeruns": "358",
+            "image": "https://historicmissourians.shsmo.org/wp-content/uploads/2020/07/yogi-berra-400x550-1.png"
+        },
+        {
+            "id": 6,
+            "name": "Babe Ruth",
+            "number": "3",
+            "career_average": ".342",
+            "career_RBI's": "2,214",
+            "career_homeruns": "714",
+            "image": "https://www.biography.com/.image/t_share/MTgwMTU2NjQxNTU4MTQ0MzQ0/gettyimages-517324714.jpg"         
+        },
+        {
+            "id": 7,
+            "name": "Reggie Jackson",
+            "number": "44",
+            "career_average": ".262",
+            "career_RBI's": "1,702",
+            "career_homeruns": "563",
+            "image": "https://sabr.org/sites/default/files/Jackson-Reggie-NYY-NBHOF.png" 
+        },
+        {
+            "id": 8,
+            "name": "Alex Rodgriguex",
+            "number": "13",
+            "career_average": ".295",
+            "career_RBI's": "1,702",
+            "career_homeruns": "696",
+            "image": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/3115.png&w=350&h=254"         
+        }
+    ]
+}
