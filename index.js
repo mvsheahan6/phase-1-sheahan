@@ -1,6 +1,7 @@
 const playerCard = document.querySelector("#player-collection")
 const playerForm = document.querySelector("#form")
 
+
 const handleSubmit = (event) => {
     event.preventDefault();
     const newPlayer = event.target.name.value
@@ -30,9 +31,31 @@ const handleSubmit = (event) => {
     // }
 }
 
+const handleMouseover = (playerObj, event) => {
+    const statsDiv = document.createElement("div")
+    statsDiv.classList.add("stats")
+    const playerAverage = document.createElement("p")
+    playerAverage.innerText = `Career Average: ${playerObj.career_average}`
+
+    const playerRbi = document.createElement("p")
+    playerRbi.innerText = `Career RBIs: ${playerObj.career_RBIs}`
+
+    const playerHr = document.createElement("p")
+    playerHr.innerText = `Career Homeruns: ${playerObj.career_homeruns}`
+
+    statsDiv.append(playerAverage, playerRbi, playerHr)
+    event.target.parentElement.append(statsDiv)
+}
+
+const handleMouseleave = (event) => {
+    event.target.parentElement.querySelector(".stats").remove()
+}
+
 const renderPlayer = (playerObj) => {
-    playerDiv = document.createElement("div")
+    const playerDiv = document.createElement("div")
     playerDiv.classList.add("card")
+    const statsDiv = document.createElement("div")
+    statsDiv.classList.add("stats")
     const playerName = document.createElement("h2")
     playerName.innerText = playerObj.name
 
@@ -44,21 +67,15 @@ const renderPlayer = (playerObj) => {
     const playerNumber = document.createElement("p")
     playerNumber.innerText = `Number: ${playerObj.number}`
 
-    const playerAverage = document.createElement("p")
-    playerAverage.innerText = `Career Average: ${playerObj.career_average}`
+    playerImg.addEventListener("mouseover", (event) => handleMouseover(playerObj, event))
+    playerImg.addEventListener("mouseleave", handleMouseleave)
 
-    const playerRbi = document.createElement("p")
-    playerRbi.innerText = `Career RBIs: ${playerObj.career_RBIs}`
+    // const heart = document.createElement("span")
+    // heart.innerHTML = '&#9825'
 
-    const playerHr = document.createElement("p")
-    playerHr.innerText = `Career Homeruns: ${playerObj.career_homeruns}`
-
-    const heart = document.createElement("span")
-    heart.innerHTML = '&#9825'
-
-    playerDiv.append(playerName, playerImg, playerName, playerAverage, playerRbi, playerHr)
+    playerDiv.append(playerName, playerImg, playerName)
     playerCard.append(playerDiv)
-    playerImg.addEventListener("mouseover", (event) => handleMouseover(playerObj))
+    
 
 }
 
@@ -66,11 +83,6 @@ const fetchData = () => {
     fetch("http://localhost:3000/yankees")
     .then(response => response.json())
     .then(players => players.forEach(renderPlayer))
-}
-
-const handleMouseover = (playerObj) => {
-    
-    playerDiv.append(playerAverage, playerRbi, playerHr)
 }
 
 playerForm.addEventListener("submit", handleSubmit)
