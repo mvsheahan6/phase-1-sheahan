@@ -51,13 +51,33 @@ const handleMouseleave = (event) => {
     event.target.parentElement.querySelector(".stats").remove()
 }
 
+const toggleHeart = (event) => {
+    // debugger
+    if(event.target.innerHTML !== '♥') {
+        event.target.innerHTML = "&#9829;"
+        event.target.classList.add("red")
+    } else {
+        event.target.innerHTML = "&#9825;"
+        event.target.classList.remove("red")
+    }
+    
+}
+
 const renderPlayer = (playerObj) => {
     const playerDiv = document.createElement("div")
     playerDiv.classList.add("card")
     const statsDiv = document.createElement("div")
     statsDiv.classList.add("stats")
     const playerName = document.createElement("h2")
-    playerName.innerText = playerObj.name
+    playerName.innerText = `${playerObj.name} `
+
+    const showLove = document.createElement("h6")
+    showLove.innerText = "(Show your LOVE)"
+    let loveBtn = document.createElement("button")
+    loveBtn.innerText = `\u2661`
+    playerName.append(loveBtn, showLove)
+    loveBtn.addEventListener("click", toggleHeart)
+
 
     const playerImg = document.createElement("img")
     playerImg.src = playerObj.image
@@ -70,13 +90,8 @@ const renderPlayer = (playerObj) => {
     playerImg.addEventListener("mouseover", (event) => handleMouseover(playerObj, event))
     playerImg.addEventListener("mouseleave", handleMouseleave)
 
-    // const heart = document.createElement("span")
-    // heart.innerHTML = '&#9825'
-
     playerDiv.append(playerName, playerImg, playerName)
     playerCard.append(playerDiv)
-    
-
 }
 
 const fetchData = () => {
