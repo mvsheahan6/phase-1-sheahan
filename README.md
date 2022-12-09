@@ -2,6 +2,10 @@
 
 NY Yankees Legends is a webpage dedicated to both NY Yankees legends and fans, alike.  The interactive page offers visitors the opportunity to review stats of some of New Yorks most celebrated players, and to add their favorite players to the collection.
 
+### Sneak Peak
+
+![Yankees Legend Walkthrough](https://user-images.githubusercontent.com/102275130/206762952-f7601820-e01f-4f92-b586-4970dfcd7eb2.gif)
+
 ### Project Status
 
 This project is a WIP and will continue to be enhanced throughout the next few months, into early 2023.  Until it's completion, visitors can enjoy it's current features and interactivity.
@@ -37,5 +41,8 @@ Pull Requests are welcome on [GitHub](https://github.com/mvsheahan6/phase-1-shea
 ## Project Walkthrough
 
 https://youtu.be/RS2qWU304O4
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> origin
