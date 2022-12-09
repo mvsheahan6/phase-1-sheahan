@@ -2,6 +2,12 @@
 
 NY Yankees Legends is a webpage dedicated to both NY Yankees legends and fans, alike.  The interactive page offers visitors the opportunity to review stats of some of New Yorks most celebrated players, and to add their favorite players to the collection.
 
+### Endpoints
+
+The supporting data for this website can be accessed at the below URL, via json-server --watch db.json
+
+http://localhost:3000/yankees
+
 ### Sneak Peak
 
 ![Yankees Legend Walkthrough](https://user-images.githubusercontent.com/102275130/206762952-f7601820-e01f-4f92-b586-4970dfcd7eb2.gif)
