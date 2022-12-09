@@ -6,11 +6,12 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div id="logo-header">
+    <div id="header-container">
+      <p class="yankees">Yankees</p>
       <img
-        src="https://i.etsystatic.com/27079357/r/il/873021/3183034629/il_fullxfull.3183034629_5bec.jpg" width="200px"
-        alt="yankee-header"
-      />
+        src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/n-y-yankees-logo-white-on-blue-allen-beatty.jpg" width="200px"
+        alt="yankee-header" />
+      <p class="legends">Legends</p>
     </div>
     <i class="fa fa-heart" id="heart" ></i>
       <form id="form">
@@ -18,13 +19,13 @@
           <legend>Add a New Player</legend>
           <br>
           <label for="name">Name</label>
-          <input type="text" name="name" id="name">
+          <input type="text" name="name" id="name" required>
           <br>
           <label for="number">Number</label>
-          <input type="text" name="number" id="number">
+          <input type="text" name="number" id="number" required>
           <br>
           <label for="image">Image</label>
-          <input type="text" name="image" id="image">
+          <input type="text" name="image" id="image" required>
           <br>
           <label for="average">Average </label>
           <input type="text" name="average" id="average">
@@ -35,7 +36,8 @@
           <label for="homeruns">Homeruns </label>
           <input type="text" name="homeruns" id="homeruns">
           <br>
-          <button type="submit">Add</button>
+          <br>
+          <button type="submit">Add Player</button>
         </fieldset>
       </form>
     <div id="player-collection"></div>

@@ -1,8 +1,32 @@
 body {
     margin: 0;
     font-family: monospace;
+    background-color: #37228b;
+    color: rgb(201, 205, 215);
   }
   
+
+  
+#header-container {
+  font-size: 70px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.yankees {
+  margin-right: 150px;
+  font-family: cursive;
+  font-style: italic;
+}
+
+.legends {
+  margin-left: 150px;
+  font-family: cursive;
+  font-style: italic;
+}
+
   .card {
     text-align: center;
     border: grey solid 1px;
@@ -11,7 +35,13 @@ body {
     height: 25rem;
     display: inline-grid;
     margin: 1rem 2rem;
-    box-shadow: 3px 4px #2b128f
+    box-shadow: 3px 4px #bbb3db;
+    transition: all 1s;
+  }
+
+  .card:hover {
+    transform: scale(1.1);
+    box-shadow: 3px 4px #e51717;
   }
   
   .player-avatar {
@@ -27,6 +57,14 @@ body {
   
   .red {
     color: red;
+  }
+
+  #form {
+    text-align: center;
+  }
+
+  #player-collection {
+    text-align: center;
   }
   
 
